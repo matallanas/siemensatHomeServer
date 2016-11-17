@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+ xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:ns1="urn:sah">
+ <SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <ns1:getLastDevicesEventsResponse>
+   <return SOAP-ENC:arrayType="ns1:MessageEvent[1]">
+    <item>
+     <id>0</id>
+     <sender></sender>
+     <text></text>
+     <timestamp></timestamp>
+     <type>0</type>
+    </item>
+   </return>
+  </ns1:getLastDevicesEventsResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

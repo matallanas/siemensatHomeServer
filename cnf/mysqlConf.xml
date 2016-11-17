@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<mysql>
+  <table name="appliances">
+    <col name="ID" type="INT"/>
+    <col name="Appliance" type="VARCHAR(64)"/>
+    <col name="Status" type="INT"/>
+    <col name="Program" type="INT"/>
+    <col name="temp" type="INT"/>
+    <col name="start_time" type="INT"/>
+    <col name="end_time" type="INT"/>
+    <col name="temp_freezer" type="INT"/>
+    <col name="supercooling" type="BOOL"/>
+    <col name="superfreezing" type="BOOL"/>
+    <col name="spin" type="INT"/>
+    <col name="light" type="INT"/>
+  </table>
+  <table name="fridgeProg">
+    <col name="start_timestamp" type="INT"/>
+    <col name="start_date" type="DATE"/>
+    <col name="start_time" type="TIME"/>
+    <col name="end_timestamp" type="INT"/>
+    <col name="end_date" type="DATE"/>
+    <col name="end_time" type="TIME"/>
+    <col name="exec_timestamp" type="INT"/>
+    <col name="exec_date" type="DATE"/>
+    <col name="exec_time" type="TIME"/>
+    <col name="temp" type="INT"/>
+    <col name="temp_freezer" type="INT"/>
+    <col name="supercooling" type="BOOL"/>
+    <col name="superfreezing" type="BOOL"/>
+  </table>
+  <table name="DWProg">
+    <col name="start_timestamp" type="INT"/>
+    <col name="start_date" type="DATE"/>
+    <col name="start_time" type="TIME"/>
+    <col name="end_timestamp" type="INT"/>
+    <col name="end_date" type="DATE"/>
+    <col name="end_time" type="TIME"/>
+    <col name="exec_timestamp" type="INT"/>
+    <col name="exec_date" type="DATE"/>
+    <col name="exec_time" type="TIME"/>
+    <col name="Program" type="INT"/>
+  </table>
+  <table name="WMProg">
+    <col name="start_timestamp" type="INT"/>
+    <col name="start_date" type="DATE"/>
+    <col name="start_time" type="TIME"/>
+    <col name="end_timestamp" type="INT"/>
+    <col name="end_date" type="DATE"/>
+    <col name="end_time" type="TIME"/>
+    <col name="exec_timestamp" type="INT"/>
+    <col name="exec_date" type="DATE"/>
+    <col name="exec_time" type="TIME"/>
+    <col name="Program" type="INT"/>
+    <col name="temp" type="INT"/>
+    <col name="spin" type="INT"/>
+  </table>
+  <table name="dryerProg">
+    <col name="start_timestamp" type="INT"/>
+    <col name="start_date" type="DATE"/>
+    <col name="start_time" type="TIME"/>
+    <col name="end_timestamp" type="INT"/>
+    <col name="end_date" type="DATE"/>
+    <col name="end_time" type="TIME"/>
+    <col name="exec_timestamp" type="INT"/>
+    <col name="exec_date" type="DATE"/>
+    <col name="exec_time" type="TIME"/>
+    <col name="Program" type="INT"/>
+    <col name="spin" type="INT"/>
+  </table>
+  <table name="ovenProg">
+    <col name="start_timestamp" type="INT"/>
+    <col name="start_date" type="DATE"/>
+    <col name="start_time" type="TIME"/>
+    <col name="end_timestamp" type="INT"/>
+    <col name="end_date" type="DATE"/>
+    <col name="end_time" type="TIME"/>
+    <col name="exec_timestamp" type="INT"/>
+    <col name="exec_date" type="DATE"/>
+    <col name="exec_time" type="TIME"/>
+    <col name="Program" type="INT"/>
+    <col name="temp" type="INT"/>
+  </table>
+  <table name="hoodProg">
+    <col name="start_timestamp" type="INT"/>
+    <col name="start_date" type="DATE"/>
+    <col name="start_time" type="TIME"/>
+    <col name="end_timestamp" type="INT"/>
+    <col name="end_date" type="DATE"/>
+    <col name="end_time" type="TIME"/>
+    <col name="exec_timestamp" type="INT"/>
+    <col name="exec_date" type="DATE"/>
+    <col name="exec_time" type="TIME"/>
+    <col name="spin" type="INT"/>
+    <col name="light" type="INT"/>
+  </table>
+</mysql>

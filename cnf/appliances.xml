@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<appliances>
+  <app id="1" soap_id="SOAP_ID_APP_FRIDGE">
+    <parameters>
+      <var name="remoteEnabled"/>
+      <var name="deviceState"/>
+      <var name="deviceStatus"/>
+      <var name="targetTemperatureKF"/>
+      <var name="targetTemperatureGF"/>
+      <var name="superKF"/>
+      <var name="superGF"/>
+      <var name="KFCompartment"/>
+      <var name="GFCompartment"/>
+      <var name="functionKF"/>
+      <var name="functionGF"/>
+    </parameters>
+    <mysql> 
+      <status col="ID"/>
+      <status col="Appliance"/>
+      <status col="Status"/>
+      <status col="temp"/>
+      <status col="temp_freezer"/>
+      <status col="supercooling"/>
+      <status col="superfreezing"/>
+    </mysql>
+    <actions>
+      <function name="setKFTargetTemperature"/>
+      <function name="setGFTargetTemperature"/>
+      <function name="setSuperKF"/>
+      <function name="setSuperGF"/>
+    </actions>
+  </app>
+  <app id="2" soap_id="SOAP_ID_APP_DW">
+    <parameters>
+      <var name="remoteEnabled"/>
+      <var name="deviceState"/>
+      <var name="deviceStatus"/>
+      <var name="washingParameters"/>
+      <var name="startTime"/>
+      <var name="remainingTime"/>
+      <var name="currentPhase"/>
+    </parameters>
+    <mysql> 
+      <status col="ID"/>
+      <status col="Appliance"/>
+      <status col="Status"/>
+      <status col="Program"/>
+      <status col="start_time"/>
+      <status col="end_time"/>
+    </mysql>
+    <actions>
+      <function name="setWashingParameters0"/>
+      <function name="start0"/>
+    </actions>
+  </app>
+  <app id="3" soap_id="SOAP_ID_APP_WM">
+    <parameters>
+      <var name="remoteEnabled"/>
+      <var name="deviceState"/>
+      <var name="deviceStatus"/>
+      <var name="washingParameters"/>
+      <var name="targetTemperature"/>
+      <var name="spin"/>
+      <var name="finishTime"/>
+      <var name="currentPhase"/>
+    </parameters>
+    <mysql>
+      <status col="ID"/>
+      <status col="Appliance"/>
+      <status col="Status"/>
+      <status col="Program"/>
+      <status col="start_time"/>
+      <status col="end_time"/>
+      <status col="spin"/>
+    </mysql>
+    <actions>
+      <function name="setWashingParameters0"/>
+      <function name="setTargetTemperature0"/>
+      <function name="setSpin0"/>
+      <function name="start0"/>
+    </actions>
+  </app>
+  <app id="4" soap_id="SOAP_ID_APP_DRYER">
+    <parameters>
+      <var name="remoteEnabled"/>
+      <var name="deviceState"/>
+      <var name="deviceStatus"/>
+      <var name="washingParameters"/>
+      <var name="startTime"/>
+      <var name="remainingTime"/>
+      <var name="currentPhase"/>
+    </parameters>
+    <mysql>
+      <status col="ID"/>
+      <status col="Appliance"/>
+      <status col="Status"/>
+      <status col="Program"/>
+      <status col="start_time"/>
+      <status col="end_time"/>
+    </mysql>
+    <actions>
+      <function name="setWashingParameters"/>
+      <function name="setSpin"/>
+      <function name="start"/>
+    </actions>
+  </app>
+  <app id="5" soap_id="SOAP_ID_APP_OVEN">
+    <parameters>
+      <var name="remoteEnabled"/>
+      <var name="deviceState"/>
+      <var name="deviceStatus"/>
+      <var name="heatingMode"/>
+      <var name="targetTemperature"/>
+      <var name="durationTime"/>
+      <var name="endTime"/>
+      <var name="childLock"/>
+    </parameters>
+    <mysql>
+      <status col="ID"/>
+      <status col="Appliance"/>
+      <status col="Status"/>
+      <status col="Program"/>
+      <status col="temp"/>
+      <status col="start_time"/>
+      <status col="end_time"/>
+    </mysql>
+    <actions>
+      <function name="lock"/>
+      <function name="setHeatingMode"/>
+      <function name="setTemperature"/>
+      <function name="flush"/>
+    </actions>
+  </app>
+  <app id="6" soap_id="SOAP_ID_APP_HOOD">
+    <parameters>
+      <var name="remoteEnabled"/>
+      <var name="deviceState"/>
+      <var name="deviceStatus"/>
+      <var name="fanSpeed"/>
+      <var name="lightOnOffDim"/>
+    </parameters>
+    <mysql>
+      <status col="ID"/>
+      <status col="Appliance"/>
+      <status col="Status"/>
+      <status col="spin"/>
+      <status col="light"/>
+    </mysql>
+    <actions>
+      <function name="programFan"/>
+      <function name="setLightOnOffDim"/>
+    </actions>
+  </app>
+</appliances>

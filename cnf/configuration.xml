@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Appliance_Comunication>
+  <data input="data/input/" output="data/output/" configuration="cnf/"/>
+  <soapServer ip="IP_SERVER" port="PORT_SERVER"/>
+  <mysql host="IP_MYSQL_SERVER" database="MYSQL_DATABASE" user="MYSQL_USER" pass="MYSQL_PASSWORD" log="mysql_log.txt" cnf="mysqlConf.xml"/>
+  <appliances cnf="appliances.xml"/>
+</Appliance_Comunication>
